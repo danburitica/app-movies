@@ -14,7 +14,6 @@ export class MovieFormComponent implements OnInit {
     titleType: '',
     year: '',
   };
-  btnMessage: string = 'Create';
   edit: boolean = false;
 
   constructor(
@@ -31,7 +30,6 @@ export class MovieFormComponent implements OnInit {
         next: (res) => {
           this.movie = res;
           this.edit = true;
-          this.btnMessage = 'Update';
         },
         error: (err) => console.error(err),
       });
