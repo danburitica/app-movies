@@ -1,6 +1,6 @@
-<nav class="navbar navbar-expand-lg navbar-light bg-light">
+<nav class="navbar navbar-expand-lg navbar-light bg-success">
   <div class="container-fluid">
-    <a class="navbar-brand" href="#">App Movies</a>
+    <a class="navbar-brand" routerLink="/">App Movies</a>
     <button
       class="navbar-toggler"
       type="button"
@@ -18,16 +18,13 @@
           <a
             class="nav-link active"
             aria-current="page"
-            routerLink="/movie"
+            routerLink="/"
             routerLinkActive="active"
             >Movies</a
           >
         </li>
         <li class="nav-item">
-          <a
-            class="nav-link"
-            routerLink="/movie/create"
-            routerLinkActive="active"
+          <a class="nav-link" routerLink="/create" routerLinkActive="active"
             >Create Movie</a
           >
         </li>

@@ -38,15 +38,23 @@ export class MovieFormComponent implements OnInit {
     }
   }
 
-  onSubmit() {
-    !this.edit
-      ? this.movieService.createMovie(this.movie).subscribe({
-          next: (res) => this.router.navigate(['/']),
-          error: (err) => console.error(err),
-        })
-      : this.movieService.updateMovie(this.movie._id, this.movie).subscribe({
-          next: (res) => this.router.navigate(['/']),
-          error: (err) => console.error(err),
-        });
+  onSubmitCreate() {
+    this.movieService.createMovie(this.movie).subscribe({
+      next: (res) => {
+        alert('Movie created successfully');
+        this.router.navigate(['/']);
+      },
+      error: (err) => console.error(err),
+    });
+  }
+
+  onSubmitUpdate() {
+    this.movieService.updateMovie(this.movie._id, this.movie).subscribe({
+      next: (res) => {
+        alert('Movie updated successfully');
+        this.router.navigate(['/']);
+      },
+      error: (err) => console.error(err),
+    });
   }
 }

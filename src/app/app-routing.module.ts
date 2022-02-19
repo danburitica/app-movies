@@ -5,9 +5,8 @@ import { MovieListComponent } from './components/movie-list/movie-list.component
 
 const routes: Routes = [
   { path: '', component: MovieListComponent },
-  { path: 'movie', component: MovieListComponent },
-  { path: 'movie/create', component: MovieFormComponent },
-  { path: 'movie/edit/:id', component: MovieFormComponent },
+  { path: 'create', component: MovieFormComponent },
+  { path: 'edit/:id', component: MovieFormComponent },
 ];
 
 @NgModule({
