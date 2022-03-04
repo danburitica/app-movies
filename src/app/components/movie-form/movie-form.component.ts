@@ -13,6 +13,7 @@ export class MovieFormComponent implements OnInit {
     title: '',
     titleType: '',
     year: '',
+    runningTimeInMinutes: '',
   };
   edit: boolean = false;
 

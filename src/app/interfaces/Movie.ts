@@ -3,4 +3,5 @@ export interface Movie {
   title: string;
   titleType: string;
   year: string;
+  runningTimeInMinutes: string;
 }
